@@ -1,0 +1,283 @@
+@import "tailwindcss";
+
+:root {
+  --background:white; /*hsl(215 28% 88%)*/
+  --background-section: white;
+  /* hsl(215 24% 85%); */
+
+  --background-card: rgba(224,242,255,0.22);
+  --background-card-hover: hsl(217.2 32.6% 12.5%);
+
+  --foreground: hsl(217 47% 11%);
+
+  --text-primary: hsl(210 40% 94%);
+  --text-secondary: hsl(215 28% 76%);
+  --text-muted: hsl(215 20% 58%);
+  --text-faint: hsl(215 16% 48%);
+
+  --text-page-primary: hsl(222 47% 11%);
+  --text-page-secondary: hsl(222 30% 24%);
+  --text-page-muted: hsl(222 16% 42%);
+
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  --border-default: rgba(255, 255, 255, 0.09);
+  --border-hover: rgba(255, 255, 255, 0.18);
+
+  --divider-start: transparent;
+  --divider-mid: rgba(15, 23, 42, 0.14);
+  --divider-end: transparent;
+
+  --primary-color: #397dbb;
+  --primary-color-hover: #2f6da5;
+  --primary-color-border: #4b8fd0;
+
+  --spine-glow-color: rgba(15, 23, 42, 0.08);
+  --spine-mid-color: rgba(15, 23, 42, 0.22);
+  --node-shadow: rgba(15, 23, 42, 0.14);
+
+  --scrollbar-track: hsl(215 22% 82%);
+  --scrollbar-thumb: hsl(222 18% 42%);
+  --scrollbar-thumb-hover: hsl(222 24% 28%);
+
+  --loading-bg: hsl(215 26% 87%);
+  --loading-text: hsl(222 47% 11%);
+
+  --fibreel-color: #f57c20;
+  --fibreel-color-hover: #e06a10;
+  --fibreel-color-border: #f98c38;
+
+  --imprime-color: #1a73e8;
+  --imprime-color-hover: #1560cc;
+  --imprime-color-border: #3d8ef0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: system-ui, sans-serif;
+  --font-mono: monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Inter", system-ui, sans-serif;
+    letter-spacing: -0.04em;
+  }
+
+/* Placeholder styling for inputs and textareas */
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    max-width: 100vw;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+.canvas-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.text-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+}
+.text-overlay a,
+.text-overlay button {
+  pointer-events: auto;
+  cursor: pointer;
+}
+.site-section {
+  position: relative;
+  z-index: 20;
+  background: var(--background-section);
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--divider-start) 0%,
+    var(--divider-mid) 20%,
+    var(--divider-mid) 80%,
+    var(--divider-end) 100%
+  );
+}
+
+.gradient-heading {
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #1e293b 35%,
+    #334155 65%,
+    #64748b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.split-heading {
+  color: var(--text-page-primary);
+  -webkit-text-fill-color: var(--text-page-primary);
+}
+
+.split-heading .heading-accent {
+  color: var(--primary-color);
+  -webkit-text-fill-color: var(--primary-color);
+}
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--loading-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: var(--loading-text);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color-border);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 0.5rem;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+/* The visible text label */
+.cta-button .btn-label {
+  display: inline-block;
+  transition:
+    transform 0.38s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 0.28s ease;
+  transform: translateX(0);
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.cta-button .btn-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-140%, -50%);
+  opacity: 0;
+  transition:
+    transform 0.38s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 0.28s ease;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover: label slides out right, icon slides in to center */
+.cta-button:hover .btn-label {
+  transform: translateX(140%);
+  opacity: 0;
+}
+/* Modifier classes */
+.cta-button.cta-fibreel {
+  background: var(--fibreel-color);
+  border-color: var(--fibreel-color-border);
+}
+.cta-button.cta-fibreel:hover {
+  background: var(--fibreel-color-hover);
+  box-shadow: 0 10px 30px rgba(245, 124, 32, 0.3);
+}
+
+.cta-button.cta-imprime {
+  background: var(--imprime-color);
+  border-color: var(--imprime-color-border);
+}
+.cta-button.cta-imprime:hover {
+  background: var(--imprime-color-hover);
+  box-shadow: 0 10px 30px rgba(26, 115, 232, 0.3);
+}
+
+.cta-button:hover .btn-icon {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.cta-button:hover {
+  background: var(--primary-color-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(57, 125, 187, 0.28);
+}
+
+@media (max-width: 768px) {
+  .cta-button {
+    padding: 12px 22px;
+    font-size: 0.92rem;
+  }
+}
