@@ -36,8 +36,7 @@ const SectionHeader: React.FC = () => {
         className="text-lg md:text-xl max-w-xl mx-auto leading-relaxed pb-10 md:pb-0"
         style={{ color: "var(--text-page-secondary, #64748b)" }}
       >
-        Precision-grade filament work across industries — from rapid prototypes
-        to production-ready parts.
+        Custom software and hardware prototypes delivered with complete source code and explanation.
       </motion.p>
     </div>
   );

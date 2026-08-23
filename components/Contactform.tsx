@@ -21,32 +21,27 @@ const CONTACT_DETAILS = [
     icon: MapPin,
     label: "Address",
     lines: [
-      "Rever Industries",
-      "Plot No. M-100/7, Ambad MIDC",
-      "Nashik 422010, Maharashtra, India",
+      "Logic Labs",
+      "Nashik, Maharashtra, India",
     ],
   },
   {
     icon: Mail,
     label: "Email",
     lines: [
-      "hello@reverindustries.com — General",
-      "print@imprime3d.com — Printing",
-      "orders@fibreel.com — Filament",
-      "partners@reverindustries.com — B2B",
+      "support@logiclabs.in — General",
+      "projects@logiclabs.in — Software Projects",
+      "hardware@logiclabs.in — Hardware & IoT",
     ],
   },
   {
     icon: Phone,
     label: "Phone / WhatsApp",
     lines: [
-      "+91 93737 39912",
-      "+91 70666 05003",
-      "+91 76668 38389",
-      "+91 91689 80555",
+      "+91 93598 78663",
     ],
   },
-  { icon: Clock, label: "Hours", lines: ["Mon – Sat, 10:00 AM – 6:00 PM IST"] },
+  { icon: Clock, label: "Hours", lines: ["Mon – Sat, 10:00 AM – 7:00 PM IST"] },
 ];
 
 //  SelectField

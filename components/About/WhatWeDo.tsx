@@ -7,17 +7,17 @@ import Image from "next/image";
 const nodes = [
   {
     num: "01",
-    label: "Engineer",
-    sub: "Materials, colours, spools",
+    label: "Discuss",
+    sub: "Share ideas & requirements",
     pos: "top",
   },
-  { num: "02", label: "Manufacture", sub: "±0.03 mm extrusion", pos: "bottom" },
-  { num: "03", label: "Print & mould", sub: "50+ machine fleet", pos: "top" },
-  { num: "04", label: "Customise", sub: "OEM & branding", pos: "bottom" },
+  { num: "02", label: "Plan", sub: "Plan & design your project", pos: "bottom" },
+  { num: "03", label: "Develop", sub: "Development & testing", pos: "top" },
+  { num: "04", label: "Deliver", sub: "On-time delivery with support", pos: "bottom" },
   {
     num: "05",
-    label: "Supply & export",
-    sub: "5 export markets",
+    label: "Handoff & Support",
+    sub: "Technical handover & guidance",
     pos: "top",
     active: true,
   },
@@ -25,16 +25,14 @@ const nodes = [
 
 const brands = [
   {
-    name: "FibReel",
-    tagline: "Filament & materials",
-    src: "https://www.fibreel.com/cdn/shop/files/fibreel-logo_page-0001_1.png?height=90&v=1768200228",
+    name: "Software Projects",
+    tagline: "Web, Mobile, AI/ML, Data Analytics",
     accentBg: "rgba(57,125,187,0.07)",
     accentBorder: "rgba(57,125,187,0.28)",
   },
   {
-    name: "Imprime3D",
-    tagline: "Print, scan, mould",
-    src: "/imprime3d_logo.png",
+    name: "Hardware Projects",
+    tagline: "Embedded, IoT, Robotics, Sensors",
     accentBg: "rgba(57,125,187,0.07)",
     accentBorder: "rgba(57,125,187,0.28)",
   },
@@ -273,7 +271,7 @@ export function WhatWeDo() {
           className="text-center text-sm font-mono tracking-wide"
           style={{ color: "var(--text-page-muted)" }}
         >
-          Delivered under two operating names
+          Specializing in two core development areas
         </p>
 
         {/* Brand cards */}
@@ -290,15 +288,11 @@ export function WhatWeDo() {
                 border: `1.5px solid ${b.accentBorder}`,
               }}
             >
-              <Image
-                src={b.src}
-                alt={b.name}
-                width={140}
-                height={36}
-                style={{ objectFit: "contain" }}
-              />
+              <span className="text-xl font-bold tracking-tight text-slate-800">
+                {b.name}
+              </span>
               <span
-                className="text-sm font-mono tracking-wide"
+                className="text-sm font-mono tracking-wide text-center px-4"
                 style={{ color: "var(--text-page-muted)" }}
               >
                 {b.tagline}
@@ -312,7 +306,7 @@ export function WhatWeDo() {
           className="text-center text-sm"
           style={{ color: "var(--text-page-muted)" }}
         >
-          Both engineered, made and backed by Rever Industries
+          Affordable pricing, multiple revisions, and quality guaranteed by Logic Labs
         </p>
       </motion.div>
     </section>

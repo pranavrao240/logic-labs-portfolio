@@ -8,7 +8,6 @@ import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
-  { label: "Legacy & Awards", href: "#legacySection" },
   { label: "Testimonials", href: "#testimonials" },
 ];
 
@@ -66,42 +65,42 @@ export function Navbar() {
           transition: "background 0.35s ease",
         }}
       >
-       <div className="max-w-7xl mx-auto px-6 md:px-8 h-[68px] flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 h-[68px] flex items-center justify-between gap-4">
 
-        <a
-  href="#"
-  style={{ textDecoration: "none" }}
-  className="select-none flex-shrink-0 flex items-center gap-3"
->
-  <div className="flex flex-col gap-1">
-    <Image
-      src="/logo_with_text.png"
-      alt="Rever Industries"
-      width={100}
-      height={30}
-      style={{ objectFit: "contain" }}
-    />
-    <span
-      className="hidden lg:block text-[10px] font-mono tracking-widest uppercase leading-none"
-      style={{ color: "rgba(15,23,42,0.38)" }}
-    >
-      Est. 2016 · Nashik, India
-    </span>
-  </div>
-  <span
-    className="hidden lg:block w-px h-8 flex-shrink-0"
-    style={{ background: "rgba(15,23,42,0.12)" }}
-  />
-  <div className="hidden lg:flex flex-col justify-center gap-1">
-    <span
-      className="text-xs font-mono tracking-[0.06em] uppercase leading-none font-bold"
-      style={{ color: "var(--primary-color)" }}
-    >
-      Reliable · Trusted · Premium
-    </span>
-  </div>
-</a>
-       
+          <a
+            href="#"
+            style={{ textDecoration: "none" }}
+            className="select-none flex-shrink-0 flex items-center gap-3"
+          >
+            <div className="flex items-center gap-2">
+              <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <polygon points="50,5 90,28 90,72 50,95 10,72 10,28" fill="#0f172a" />
+                <polygon points="50,12 82,31 82,69 50,88 18,69 18,31" fill="#1e293b" />
+                <path d="M40 32 V68 H60" stroke="#f57c20" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold tracking-tight leading-none" style={{ color: "#0f172a" }}>
+                  Logic<span style={{ color: "#f57c20" }}>Labs</span>
+                </span>
+                <span className="text-[9px] font-mono tracking-widest uppercase mt-0.5" style={{ color: "rgba(15,23,42,0.45)" }}>
+                  INNOVATE · BUILD · SOLVE
+                </span>
+              </div>
+            </div>
+            <span
+              className="hidden lg:block w-px h-8 flex-shrink-0"
+              style={{ background: "rgba(15,23,42,0.12)" }}
+            />
+            <div className="hidden lg:flex flex-col justify-center gap-1">
+              <span
+                className="text-xs font-mono tracking-[0.06em] uppercase leading-none font-bold"
+                style={{ color: "var(--primary-color)" }}
+              >
+                Reliable · Trusted · Original
+              </span>
+            </div>
+          </a>
+
 
           {/* CENTER: Nav links + brand logos */}
           <div className="hidden md:flex items-center gap-2 flex-1 justify-center">
@@ -149,23 +148,15 @@ export function Navbar() {
               style={{ background: "rgba(15,23,42,0.12)" }}
             />
 
-            <Image
-              src="https://www.fibreel.com/cdn/shop/files/fibreel-logo_page-0001_1.png?height=90&v=1768200228"
-              alt="FibReel"
-              width={100}
-              height={28}
-              style={{ objectFit: "contain" }}
-            />
+            <span className="text-xs font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-slate-100 text-slate-700">
+              Software
+            </span>
 
             <span className="w-2 flex-shrink-0" />
 
-            <Image
-              src="/imprime3d_logo.png"
-              alt="Imprime3D"
-              width={100}
-              height={28}
-              style={{ objectFit: "contain" }}
-            />
+            <span className="text-xs font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-[#f57c20]/10 text-[#d86008]">
+              Hardware
+            </span>
           </div>
 
           {/* RIGHT: CTA */}
@@ -236,7 +227,7 @@ export function Navbar() {
                 className="px-4 py-2 text-[10px] font-mono uppercase"
                 style={{ color: "var(--primary-color)" }}
               >
-                Reliable · Trusted · Premium 
+                Reliable · Trusted · Premium
               </div>
               {NAV_LINKS.map((link) => {
                 const isActive = activeSection === link.href.replace("#", "");

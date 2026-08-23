@@ -4,9 +4,9 @@ type PathKey = "print" | "filament" | "partnership";
 
 //  Routing: which inbox receives which path
 const PATH_META: Record<PathKey, { brand: string; toEnvKey: string }> = {
-  print: { brand: "Imprime3D", toEnvKey: "MAIL_TO_PRINT" },
-  filament: { brand: "FibReel", toEnvKey: "MAIL_TO_FILAMENT" },
-  partnership: { brand: "Rever Industries", toEnvKey: "MAIL_TO_PARTNERSHIP" },
+  print: { brand: "Logic Labs Software", toEnvKey: "MAIL_TO_PRINT" },
+  filament: { brand: "Logic Labs Hardware", toEnvKey: "MAIL_TO_FILAMENT" },
+  partnership: { brand: "Logic Labs", toEnvKey: "MAIL_TO_PARTNERSHIP" },
 };
 
 const FIELD_LABELS: Record<string, string> = {
@@ -76,7 +76,7 @@ function buildHtml(path: PathKey, fields: Record<string, string>): string {
           <td style="background:#f8fafc;padding:16px 32px;border-top:1px solid #e2e8f0;">
             <p style="margin:0;font-size:12px;color:#94a3b8;">
               Received ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST
-              · Rever Industries, Nashik
+              · Logic Labs, Nashik
             </p>
           </td>
         </tr>

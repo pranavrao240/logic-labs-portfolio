@@ -9,12 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Rever Industries | Premium 3D Printer Filaments & Rapid Prototyping",
+  title: "Logic Labs | BE & Diploma Engineering Projects & Custom Solutions",
   description:
-    "Premier manufacturer of 3D printer filaments and rapid prototyping services based in Nashik. Engineered for seamless finish and high-performance output.",
+    "Leading provider of high-quality, custom Software & Hardware engineering projects and student guidance based in Nashik.",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/gemini-svg.svg",
+    apple: "/gemini-svg.svg",
   },
 };
 

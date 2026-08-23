@@ -20,8 +20,8 @@ export function ContactSectionHeader() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="split-heading text-4xl md:text-6xl font-light tracking-tighter mb-4"
         >
-          Let&apos;s build the next{" "}
-          <span className="heading-accent">decade together.</span>
+          Let&apos;s build your project{" "}
+          <span className="heading-accent">together.</span>
         </motion.h2>
 
         {/* Subtitle */}
@@ -32,9 +32,8 @@ export function ContactSectionHeader() {
           className="text-base mb-10 max-w-3xl mx-auto"
           style={{ color: "var(--text-page-muted)" }}
         >
-          Bulk filament, a private-label run with your own branded spools, or a
-          part taken from prototype to mass production — talk to the company
-          that makes all of it.
+          Custom software applications, hardware integration, or complete project documentation —
+          discuss your academic requirements with Logic Labs today.
         </motion.p>
 
         {/*  keyword pills  */}
@@ -44,7 +43,7 @@ export function ContactSectionHeader() {
           transition={{ duration: 0.45, delay: 0.2 }}
           className="flex justify-center items-center gap-3 mb-10 flex-wrap"
         >
-          {["RELIABLE", "TRUSTED", "PREMIUM"].map((word, i) => (
+          {["RELIABLE", "TRUSTED", "ORIGINAL"].map((word, i) => (
             <div key={word} className="flex items-center gap-3">
               <span
                 className="text-xs font-mono tracking-[0.22em] font-semibold"

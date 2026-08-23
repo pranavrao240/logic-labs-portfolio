@@ -13,14 +13,14 @@ const chain = [
   },
   {
     icon: <CircleDot size={24} strokeWidth={1.5} />,
-    title: "FibReel",
-    sub: "We make the filament",
+    title: "Software",
+    sub: "Web & mobile code",
     highlight: true,
   },
   {
     icon: <Printer size={24} strokeWidth={1.5} />,
-    title: "Imprime3D",
-    sub: "Print, mould & scan",
+    title: "Hardware",
+    sub: "Embedded systems",
     highlight: true,
   },
   {

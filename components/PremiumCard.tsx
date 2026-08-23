@@ -71,9 +71,9 @@ export function PremiumCard() {
           className="font-semibold"
           style={{ color: "var(--primary-color)" }}
         >
-          India&apos;s most loved premium filament
+          India&apos;s most loved project developer support
         </span>{" "}
-        — 4.8★ rated, enhanced PLA+, vacuum-sealed, finished like it matters.
+        — 4.8★ rated, customized code, clear explanation, built like it matters.
       </p>
     </motion.div>
   );

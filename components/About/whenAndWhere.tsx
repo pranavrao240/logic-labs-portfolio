@@ -7,44 +7,44 @@ const cards = [
   {
     need: "Reliability?",
     word: "RELIABLE",
-    highlight: "±0.03 mm",
-    rest: ", spool after spool, for ten years.",
+    highlight: "On-time delivery",
+    rest: ", your deadline, our priority.",
     letter: "R",
   },
   {
-    need: "Your own brand?",
-    word: "CUSTOMISABLE",
-    highlight: "OEM to the spool",
-    rest: " — design, colour, branding.",
+    need: "Tailored to need?",
+    word: "CUSTOM",
+    highlight: "Designed for you",
+    rest: " — custom features, hardware sensors, custom layout.",
     letter: "C",
   },
   {
-    need: "Volume?",
-    word: "SCALABLE",
-    highlight: "1 → mass production",
-    rest: ", print to injection mould.",
+    need: "Originality?",
+    word: "UNIQUE",
+    highlight: "100% Original",
+    rest: " — custom-developed code, zero copy.",
+    letter: "U",
+  },
+  {
+    need: "Documentation?",
+    word: "COMPLETE",
+    highlight: "Full Reports",
+    rest: " — SRS, UML diagrams, user guides, modules.",
+    letter: "D",
+  },
+  {
+    need: "Support?",
+    word: "SUPPORTED",
+    highlight: "Handoff & Guidance",
+    rest: " — technical handover, deployment assistance, and viva guidance.",
     letter: "S",
   },
   {
-    need: "Fine detail?",
-    word: "PRECISE",
-    highlight: "MSLA & industrial SLA",
-    rest: " up to 800×800×550 mm.",
-    letter: "P",
-  },
-  {
-    need: "It yesterday?",
-    word: "FAST",
-    highlight: "24 hr turnaround",
-    rest: " on standard filament orders.",
-    letter: "F",
-  },
-  {
-    need: "A safe pair of hands?",
-    word: "TRUSTED",
-    highlight: "ISO 9001:2015",
-    rest: " · CE · RoHS certified.",
-    letter: "T",
+    need: "Pricing?",
+    word: "AFFORDABLE",
+    highlight: "Competitive rates",
+    rest: " — high-quality results at student & startup friendly prices.",
+    letter: "A",
   },
 ];
 
@@ -183,8 +183,8 @@ export function WhenAndWhere() {
           className="text-base mb-12 max-w-xl"
           style={{ color: "var(--text-page-muted)" }}
         >
-          Whatever brings you here — one word says when to come to Rever and its
-          brands. And below it, exactly where to find us.
+          Whatever brings you here — one word says when to come to Logic Labs.
+          And below it, exactly where to find us.
         </motion.p>
 
         {/* Card grid */}

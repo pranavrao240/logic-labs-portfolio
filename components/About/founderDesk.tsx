@@ -40,7 +40,7 @@ export function FoundersDesk() {
           >
             <Image
               src="/rever/frame-192.webp"
-              alt="Founder — Rever Industries"
+              alt="Project Developer & Support — Logic Labs"
               fill
               className="object-cover"
               priority
@@ -61,7 +61,7 @@ export function FoundersDesk() {
                 className="text-xs font-mono tracking-[0.22em] uppercase mb-1"
                 style={{ color: "var(--primary-color)" }}
               >
-                FOUNDER · REVER INDUSTRIES
+                DEVELOPER &amp; SUPPORT · LOGIC LABS
               </p>
               <p
                 className="font-black tracking-tight"
@@ -71,7 +71,7 @@ export function FoundersDesk() {
                   fontFamily: "system-ui, sans-serif",
                 }}
               >
-                [Founder name]
+                Pranav Rao
               </p>
             </div>
           </div>
@@ -92,9 +92,9 @@ export function FoundersDesk() {
                   color: "var(--text-page-primary)",
                 }}
               >
-                "In 2016, India relied entirely on imported filament. We started
-                Rever Industries to prove that materials made here could stand
-                beside — and outlast — anything shipped in."
+                "We started Logic Labs to empower creators, startups, and students
+                with high-quality, custom engineering solutions. Our focus is to turn
+                complex ideas into functional, working hardware and software systems."
               </p>
             </div>
           </div>

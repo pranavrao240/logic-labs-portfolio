@@ -27,13 +27,13 @@
   --divider-mid: rgba(15, 23, 42, 0.14);
   --divider-end: transparent;
 
-  --primary-color: #397dbb;
-  --primary-color-hover: #2f6da5;
-  --primary-color-border: #4b8fd0;
+  --primary-color: #f57c20;
+  --primary-color-hover: #d95f14;
+  --primary-color-border: #f98c38;
 
-  --spine-glow-color: rgba(15, 23, 42, 0.08);
-  --spine-mid-color: rgba(15, 23, 42, 0.22);
-  --node-shadow: rgba(15, 23, 42, 0.14);
+  --spine-glow-color: rgba(245, 124, 32, 0.08);
+  --spine-mid-color: rgba(245, 124, 32, 0.22);
+  --node-shadow: rgba(245, 124, 32, 0.14);
 
   --scrollbar-track: hsl(215 22% 82%);
   --scrollbar-thumb: hsl(222 18% 42%);

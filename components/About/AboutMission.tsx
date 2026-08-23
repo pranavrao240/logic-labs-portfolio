@@ -32,10 +32,11 @@ export function AboutMission() {
           className="leading-relaxed mb-4"
           style={{ color: "var(--text-page-secondary)" }}
         >
-          Since 2016, Rever Industries has owned every step — from raw polymer
-          to finished part. FibReel makes the filament. Imprime3D prints,
-          moulds, and scans the parts. We even mould our own spools. A decade of
-          making, refining, and shipping from one facility
+          Since 2016, Logic Labs has delivered high-quality, fully customized
+          software and hardware engineering solutions for startups, external clients, and students.
+          We design the architecture, write original code, integrate embedded sensors, and provide
+          comprehensive documentation and technical handover guidance. A decade of enabling innovation
+          and building robust tech.
         </p>
         <motion.div
           initial={{ opacity: 0, y: 15 }}

@@ -4,16 +4,14 @@ import React from "react";
 import Image from "next/image";
 import { LocationCard } from "./LocationCard";
 
-const BRANDS = [
+const DOMAINS = [
   {
-    name: "FibReel",
-    href: "https://fibreel.com",
-    desc: "Premium 3D printing filaments — PLA, PETG, ABS, Carbon, TPU & more.",
+    name: "Software Projects",
+    desc: "Responsive web apps, mobile applications, machine learning, and AI models.",
   },
   {
-    name: "Imprime3D",
-    href: "https://imprime3d.in",
-    desc: "3D printing & scanning services — prototypes to production runs.",
+    name: "Hardware Projects",
+    desc: "Embedded systems, IoT, robotics, automation, and sensor integrations.",
   },
 ];
 
@@ -41,48 +39,21 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             {/* Logo + name */}
             <div className="flex items-center gap-2.5">
-              <Image
-                src="/logo_with_text.png"
-                alt="Rever Industries"
-               width={120}
-    height={120}
-    className="!w-24 !h-auto"
-              />
-              
+              <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <polygon points="50,5 90,28 90,72 50,95 10,72 10,28" fill="#0f172a" />
+                <polygon points="50,12 82,31 82,69 50,88 18,69 18,31" fill="#1e293b" />
+                <path d="M40 32 V68 H60" stroke="#f57c20" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span className="text-lg font-bold tracking-tight leading-none" style={{ color: "#0f172a" }}>
+                Logic<span style={{ color: "#f57c20" }}>Labs</span>
+              </span>
             </div>
             <p
               className="text-sm leading-relaxed"
               style={{ color: "var(--text-page-muted)" }}
             >
-              Parent company of{" "}
-              <a
-                href="https://fibreel.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors duration-200 underline underline-offset-2"
-                style={{
-                  color: "var(--primary-color)",
-                  textDecorationColor: "rgba(57,125,187,0.35)",
-                }}
-              >
-                FibReel
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://imprime3d.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors duration-200 underline underline-offset-2"
-                style={{
-                  color: "var(--primary-color)",
-                  textDecorationColor: "rgba(57,125,187,0.35)",
-                }}
-              >
-                Imprime3D
-              </a>
-              .<br />
-
-              <br />
+              Specializing in custom BE &amp; Diploma Engineering Projects.
+              High-quality Software &amp; Hardware prototyping with full documentation.
             </p>
             <div className="flex flex-wrap gap-2">
               {BADGES.map((badge) => (
@@ -101,37 +72,33 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Col 2 — Brands */}
+          {/* Col 2 — Project Domains */}
           <div className="flex flex-col gap-4">
             <p
               className="text-sm font-mono tracking-[0.22em] uppercase font-semibold"
               style={{ color: "var(--text-page-primary)" }}
             >
-              Our Brands
+              Project Domains
             </p>
             <div className="flex flex-col gap-4">
-              {BRANDS.map((brand) => (
-                <a
-                  key={brand.name}
-                  href={brand.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex flex-col gap-0.5 transition-opacity duration-200"
-                  style={{ textDecoration: "none" }}
+              {DOMAINS.map((domain) => (
+                <div
+                  key={domain.name}
+                  className="flex flex-col gap-0.5"
                 >
                   <span
-                    className="text-sm font-medium transition-colors duration-200"
+                    className="text-sm font-medium"
                     style={{ color: "var(--primary-color)" }}
                   >
-                    {brand.name} ↗
+                    {domain.name}
                   </span>
                   <span
                     className="text-xs leading-relaxed"
                     style={{ color: "var(--text-page-muted)" }}
                   >
-                    {brand.desc}
+                    {domain.desc}
                   </span>
-                </a>
+                </div>
               ))}
             </div>
           </div>
@@ -148,9 +115,9 @@ export function Footer() {
               className="text-sm font-light italic leading-relaxed"
               style={{ color: "var(--text-page-muted)" }}
             >
-              Building India's 3D future,
+              Smart Projects,
               <br />
-              layer by layer.
+              Strong Future.
             </p>
             <div
               className="mt-auto pt-4"
@@ -188,7 +155,7 @@ export function Footer() {
             className="text-xs font-mono"
             style={{ color: "var(--text-page-muted)", opacity: 0.55 }}
           >
-            © {new Date().getFullYear()} Rever Industries. All rights reserved.
+            © {new Date().getFullYear()} Logic Labs. All rights reserved.
           </p>
           
         </div>

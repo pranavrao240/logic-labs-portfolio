@@ -436,10 +436,10 @@ const Globe3D = dynamic(
 );
 
 const channels = [
-  { icon: Package, title: "D2C", sub: "Direct to creator — shop.reverindustries.com" },
-  { icon: Users, title: "B2C", sub: "Amazon, Flipkart & 10+ marketplaces" },
-  { icon: MapPin, title: "B2B", sub: "OEM supply, bulk & institutional orders" },
-  { icon: Landmark, title: "B2G", sub: "Government tenders, public sector & defense procurement" },
+  { icon: Package, title: "Software", sub: "Web, Mobile, ML & system programming solutions" },
+  { icon: Users, title: "Hardware", sub: "Arduino, ESP32, Raspberry Pi & sensor integration" },
+  { icon: MapPin, title: "Support", sub: "One-on-one final viva guidance and explanation" },
+  { icon: Landmark, title: "Documentation", sub: "Complete SRS, UML diagrams, and project reports" },
 ];
 
 const exportCountries = ["USA", "Germany", "Turkey", "Philippines"];

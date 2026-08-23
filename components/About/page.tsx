@@ -37,11 +37,9 @@ export default function AboutSection() {
 
         <AboutMission />
 
-        <AboutSupplyChain />
         <WhatWeDo />
         <AboutValues />
         <WhenAndWhere />
-        <Timeline />
         <FoundersDesk />
         <section className="site-section px-6 pt-20 md:pt-28">
           <div className="max-w-7xl mx-auto">

@@ -61,8 +61,8 @@ export function LocationCard() {
         className="text-sm leading-relaxed relative z-10"
         style={{ color: "var(--text-page-muted)" }}
       >
-        Manufacturing, injection moulding, R&amp;D, quality control and services
-        — all within a single facility,{" "}
+        Project design, development, documentation, hardware testing, and student guidance
+        — all from our facility in Nashik,{" "}
         <span
           className="font-semibold"
           style={{ color: "var(--primary-color)" }}

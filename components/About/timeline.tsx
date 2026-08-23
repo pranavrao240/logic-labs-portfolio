@@ -6,53 +6,53 @@ import { motion, useInView } from "framer-motion";
 const milestones = [
   {
     year: "2016",
-    text: "Pioneer in manufacturing quality 3D printing filaments under the FibReel brand.",
+    text: "Founded Logic Labs to provide custom academic & engineering projects.",
     highlight: true,
   },
   {
     year: "2017",
-    text: "Started OEM services in 3D printing.",
+    text: "Expanded into Web Development project solutions.",
     highlight: false,
   },
   {
     year: "2018",
-    text: "Launched FDM 3D printing services.",
+    text: "Introduced Embedded Systems & Robotics project support.",
     highlight: false,
   },
   {
     year: "2019",
-    text: "Began manufacturing PLA CF (carbon-fibre) and ASA filaments.",
+    text: "Began Machine Learning and AI project guidance.",
     highlight: false,
   },
   {
     year: "2020",
-    text: "Added injection moulding for OEM customisation.",
+    text: "Standardized project documentation support (SRS, UML).",
     highlight: true,
   },
   {
     year: "2021",
-    text: "Expanded filament production capacity and began exporting to global markets.",
+    text: "Reached milestone of 500+ projects successfully delivered.",
     highlight: true,
   },
   {
     year: "2022",
-    text: "Launched MSLA resin printing services.",
+    text: "Added IoT & Cloud-integrated hardware systems.",
     highlight: false,
   },
   {
     year: "2023",
-    text: "Grew the 3D-printing farm to 50 machines.",
+    text: "Expanded technologies support (React, Flutter, Python, ESP32).",
     highlight: true,
   },
   {
     year: "2024",
-    text: "Launched PA CF (nylon carbon-fibre) filament.",
+    text: "Introduced advanced AI, Computer Vision, and Deep Learning tracks.",
     highlight: false,
   },
-  { year: "2025", text: "Enhanced PLA+ composition.", highlight: false },
+  { year: "2025", text: "Achieved 98% student satisfaction & support rate.", highlight: false },
   {
     year: "2026",
-    text: "Added an industrial SLA machine — a decade as one integrated manufacturer.",
+    text: "A decade of enabling student innovation and building careers.",
     highlight: true,
   },
 ];
@@ -102,8 +102,8 @@ export function Timeline() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="split-heading text-4xl md:text-6xl font-light tracking-tighter mb-12"
         >
-          Ten years of showing up,{" "}
-          <span className="heading-accent">layer by layer.</span>
+          Ten years of enabling,{" "}
+          <span className="heading-accent">student innovation.</span>
         </motion.h2>
 
         {/* Timeline card — sky blue bg */}
@@ -261,10 +261,10 @@ export function Timeline() {
               color: "var(--text-page-muted)",
             }}
           >
-            A new material, a new service, a new machine, a new market — eleven
-            consecutive years of investment. That&apos;s not a streak we intend
+            A new technology, a new domain, a new framework, a new system — eleven
+            consecutive years of enablement. That&apos;s not a streak we intend
             to break, and it&apos;s the surest evidence that we&apos;ll still be
-            here for your next order, and the one after that.
+            here for your next project, and the one after that.
           </p>
 
           {/*

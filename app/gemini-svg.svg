@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Top Left Corner Accent -->
+  <polygon points="0,0 120,0 0,120" fill="#F4821F" />
+
+  <!-- Outer Hexagonal Frame (Dark Charcoal/Navy) -->
+  <!-- Left Half of Hexagon Frame -->
+  <path d="M 226,72 L 140,122 L 95,200 L 95,312 L 140,390 L 226,440 L 246,440 L 226,405 L 160,367 L 130,315 L 130,197 L 160,145 L 226,107 Z" fill="#1C212D" />
+  
+  <!-- Right Half of Hexagon Frame -->
+  <path d="M 286,72 L 372,122 L 417,200 L 417,312 L 372,390 L 286,440 L 266,440 L 286,405 L 352,367 L 382,315 L 382,197 L 352,145 L 286,107 Z" fill="#1C212D" />
+
+  <!-- Inner Stylized "L" (Orange) -->
+  <!-- Vertical Stem -->
+  <polygon points="214,140 254,140 254,342 214,342" fill="#F4821F" />
+  <!-- Horizontal Base -->
+  <polygon points="214,302 334,302 334,342 214,342" fill="#FA8C16" />
+  <!-- Inner Highlight/Depth Accent -->
+  <polygon points="214,140 234,160 234,322 214,342" fill="#E06D0C" opacity="0.4" />
+</svg>
