@@ -39,41 +39,16 @@ export function FoundersDesk() {
             style={{ aspectRatio: "4/3" }}
           >
             <Image
-              src="/rever/frame-192.webp"
+              src="/frame-192.png"
               alt="Project Developer & Support — Logic Labs"
               fill
               className="object-cover"
               priority
             />
 
-            {/* Dark gradient overlay */}
-            <div
-              className="absolute inset-x-0 bottom-0 h-32"
-              style={{
-                background:
-                  "linear-gradient(to top, rgba(15,23,42,0.55) 0%, transparent 100%)",
-              }}
-            />
 
-            {/* Name tag on image */}
-            <div className="absolute bottom-0 left-0 px-7 py-6">
-              <p
-                className="text-xs font-mono tracking-[0.22em] uppercase mb-1"
-                style={{ color: "var(--primary-color)" }}
-              >
-                DEVELOPER &amp; SUPPORT · LOGIC LABS
-              </p>
-              <p
-                className="font-black tracking-tight"
-                style={{
-                  fontSize: "clamp(1.2rem, 3vw, 1.6rem)",
-                  color: "#ffffff",
-                  fontFamily: "system-ui, sans-serif",
-                }}
-              >
-                Pranav Rao
-              </p>
-            </div>
+
+
           </div>
 
           {/* Quote section  */}
