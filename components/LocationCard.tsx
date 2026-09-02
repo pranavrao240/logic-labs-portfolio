@@ -52,7 +52,7 @@ export function LocationCard() {
           fontFamily: "system-ui, sans-serif",
         }}
       >
-        Ambad MIDC, Nashik
+        JailRoad, Nashik
         <span style={{ color: "var(--primary-color)" }}>.</span>
       </p>
 
